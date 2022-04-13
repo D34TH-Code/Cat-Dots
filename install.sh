@@ -126,6 +126,11 @@ esac
     printf "${cb}[*] Copying scripts\n" && sleep 3
     cp -ra ./bin/* $HOME/.local/bin/
     printf "${cg}[*] Scripts copied\n" && sleep 2
+    printf "${cr}[*] Making them excutables\n" && sleep 2
+    chmod +x ~/.local/bin/*
+    chmod +x ~/.config/bspwm/bspwmrc
+    chmod +x ~/.config/rofi/bin/*
+    chmod +x ~/.config/polybar/launch.sh
     printf "${cb}[*] Copying wallpapers\n" && sleep 3
     cp -ra ./walls/* $HOME/Pictures/Wallpapers
     printf "${cg}[*] Wallpapers copied\n" && sleep 2
