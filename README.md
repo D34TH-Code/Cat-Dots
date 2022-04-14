@@ -2,6 +2,7 @@
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/dev/assets/logos/exports/1544x1544_circle.png" width="100" alt="Logo"/><br/>
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/dev/assets/misc/transparent.png" height="30" width="0px"/>
 	Cat-Dots(Alpha)
+	The Dotfiles with catppuccin colors
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/dev/assets/misc/transparent.png" height="30" width="0px"/>
 </h3>
 
@@ -17,7 +18,7 @@
 		<img alt="Issues" src="https://img.shields.io/github/issues/deathemonic/cat-dots?style=for-the-badge&logo=gitbook&color=B5E8E0&logoColor=D9E0EE&labelColor=302D41"></a>
 </p>
 
-<h2 align=center>The Dotfiles with catppuccin colors</h2>
+![Preview](https://github.com/Deathemonic/Cat-Dots/blob/alpha/Screenshots/drawing.png)
 
 ## Installation
 Go to the [wiki](https://github.com/deathemonic/cat-dots/wiki) for a guide on how to install it and to how to setup it
