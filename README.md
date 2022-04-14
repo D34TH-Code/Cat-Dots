@@ -1,5 +1,6 @@
 <h3 align="center">
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/dev/assets/logos/exports/1544x1544_circle.png" width="100" alt="Logo"/><br/>
+	<img src="https://github.com/Deathemonic/Cat-Dots/blob/alpha/Screenshots/catdots.png" width="800">
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/dev/assets/misc/transparent.png" height="30" width="0px"/>
 	Cat-Dots(Alpha)
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/dev/assets/misc/transparent.png" height="30" width="0px"/>
@@ -16,8 +17,6 @@
 	<a href="https://github.com/deathemonic/cat-dots/issues">
 		<img alt="Issues" src="https://img.shields.io/github/issues/deathemonic/cat-dots?style=for-the-badge&logo=gitbook&color=B5E8E0&logoColor=D9E0EE&labelColor=302D41"></a>
 </p>
-
-![Preview](https://github.com/Deathemonic/Cat-Dots/blob/alpha/Screenshots/catdots.png)
 
 ## Installation
 Go to the [wiki](https://github.com/deathemonic/cat-dots/wiki) for a guide on how to install it and to how to setup it
