@@ -17,8 +17,10 @@ super + n
 # Rofi Menus/Applets
 super + {r,m,p,a,s,i}
 	sh $HOME/.config/rofi/bin/{runner,music,powermenu,asroot,screenshot,network}
+super + b
+        rofi-bluetooth
 
-# Dashboard
+# Dashboard (Unused)
 super + d
 	sh $HOME/.local/bin/dashboard
 
@@ -27,23 +29,26 @@ super + d
 # Launch Apps
 super + shift + {b,n}
 	{firefox,geany}
-
 super + e
 	nautilus
 
 # Terminal Apps
-ctrl + alt + {v,n,r,h,b}
-	kitty -e {vim,nvim,ranger,htop,bashtop}
+ctrl + alt + {v,n,r,h}
+	kitty -e {vim,nvim,ranger,htop}
 
 # Color Picker
 super + shift + p
-	color-gpick
+	sh $HOME/.local/bin/gpick
 
 # Lockscreen
 ctrl + alt + l
         sh $HOME/.local/bin/lock
 
 # System Keys
+
+# Show GUI screenshot
+super + shift + s
+        sh $HOME/.config/rofi/bin/screenshot
 
 # Take a screenshot
 Print
@@ -108,7 +113,6 @@ super + ctrl + {1-9}
 
 # Fullscreen or Monocle
 super + f
-#	bspc desktop -l next
     bspc node -t "~"fullscreen
 
 # Toggle beetwen floating & tiled
@@ -116,8 +120,7 @@ super + space
     bspc node -t "~"{floating,tiled}
 
 # Pseudo Tiled & tiled mode
-super + shift + space
-#super + {p,t}
+super + alt + {p,t}
     bspc node -t "~"{pseudo_tiled,tiled}
 
 # Set the node flags

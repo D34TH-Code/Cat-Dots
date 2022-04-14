@@ -1,15 +1,15 @@
 @import "colors.rasi"
+@import "font.rasi"
 
 * {
     background-color:       @BG;
     text-color:             @FG;
-	font:				 	"Iosevka 10";
 }
 
 window {
-    width:      			200px;
-    padding:    			20px;
-    border:					0px 0px 2px 0px;
+    width:      	    200px;
+    padding:                20px;
+    border:		    0px 0px 2px 0px;
     border-radius:          8px;
     border-color:           @BDR;
     location:               center;
@@ -18,7 +18,7 @@ window {
 }
 
 entry {
-    expand: 				true;
-    width: 					150px;
-    text-color:				@BDR;
+    expand: 		    true;
+    width: 		    150px;
+    text-color:		    @BDR;
 }

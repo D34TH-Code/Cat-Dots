@@ -1,9 +1,9 @@
 configuration {
     show-icons:                     true;
-    display-drun: 					"";
+    display-drun: 		    "";
     drun-display-format:            "{icon} {name}";
     disable-history:                false;
-	click-to-exit: 					true;
+    click-to-exit: 		    true;
 }
 
 @import "font.rasi"
@@ -24,20 +24,20 @@ window {
 }
 
 prompt {
-    enabled: 						true;
-	padding: 						8px;
-	background-color: 				@BG;
-	text-color: 					@IMG;
+    enabled: 			    true;
+    padding: 			    8px;
+    background-color: 		    @BG;
+    text-color: 		    @IMG;
 }
 
 textbox-prompt-colon {
-	expand: 						false;
-	str: 							"";
+    expand: 			    false;
+    str: 			    "";
     border-radius:                  100%;
     background-color:               @SEL;
     text-color:                     @FG;
     padding:                        8px 12px 8px 12px;
-	font:							"Iosevka Nerd Font 10";
+    font:			    "Iosevka Nerd Font 10";
 }
 
 entry {
@@ -48,20 +48,20 @@ entry {
     horizontal-align:               0;
     placeholder:                    "Search...";
     blink:                          true;
-    border:                  		0px 0px 2px 0px;
-    border-color:                  	@BDR;
+    border:                  	    0px 0px 2px 0px;
+    border-color:                   @BDR;
     border-radius:                  10px;
     padding:                        8px;
 }
 
 inputbar {
-	children: 						[ textbox-prompt-colon, prompt, entry ];
+	children: 		    [ textbox-prompt-colon, prompt, entry ];
     background-color:               @BG;
     text-color:                     @FG;
     expand:                         false;
-    border:                  		0px 0px 0px 0px;
+    border:                  	    0px 0px 0px 0px;
     border-radius:                  0px;
-    border-color:                  	@BDR;
+    border-color:                   @BDR;
     margin:                         0px 0px 0px 0px;
     padding:                        0px;
     position:                       center;
@@ -77,7 +77,7 @@ case-indicator {
 listview {
     background-color:               @BG;
     columns:                        1;
-    lines:							7;
+    lines:			    7;
     spacing:                        4px;
     cycle:                          false;
     dynamic:                        true;
@@ -87,7 +87,7 @@ listview {
 mainbox {
     background-color:               @BG;
     children:                       [ inputbar, listview ];
-    spacing:                       	15px;
+    spacing:                        15px;
     padding:                        15px;
 }
 
@@ -100,8 +100,8 @@ element {
 }
 
 element-icon {
-    background-color: 				inherit;
-    text-color:       				inherit;
+    background-color: 	            inherit;
+    text-color:       		    inherit;
     horizontal-align:               0.5;
     vertical-align:                 0.5;
     size:                           24px;
@@ -109,8 +109,8 @@ element-icon {
 }
 
 element-text {
-    background-color: 				inherit;
-    text-color:       				inherit;
+    background-color: 		    inherit;
+    text-color:       		    inherit;
     expand:                         true;
     horizontal-align:               0;
     vertical-align:                 0.5;
@@ -133,9 +133,9 @@ element alternate.active {
 element selected {
     background-color:               @BGA;
     text-color:                     @SEL;
-    border:                  		0px 0px 0px 0px;
+    border:                  	    0px 0px 0px 0px;
     border-radius:                  10px;
-    border-color:                  	@BDR;
+    border-color:                   @BDR;
 }
 
 element selected.urgent {
