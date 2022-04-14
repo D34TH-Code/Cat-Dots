@@ -24,6 +24,7 @@ Go to the [wiki](https://github.com/deathemonic/cat-dots/wiki) for a guide on ho
 
 <details>
 	<summary><strong>Screenshots</strong></summary>
+	> Desktop
 </details>
 
 ## Thanks to
