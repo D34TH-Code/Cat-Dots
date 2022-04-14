@@ -22,6 +22,9 @@
 ## Installation
 Go to the [wiki](https://github.com/deathemonic/cat-dots/wiki) for a guide on how to install it and to how to setup it
 
+<details><h1>Screenshots</h2>
+</details>
+
 ## Thanks to
 [**Catppuccin**](https://github.com/Catppuccin) - For the color palette and theming
 
