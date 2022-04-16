@@ -1,8 +1,6 @@
 <h3 align="center">
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/dev/assets/logos/exports/1544x1544_circle.png" width="100" alt="Logo"/><br/>
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/dev/assets/misc/transparent.png" height="30" width="0px"/>
-	<img src="https://github.com/Deathemonic/Cat-Dots/blob/alpha/Screenshots/catdots.png" width="450"/><br/>
-	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/dev/assets/misc/transparent.png" height="30" width="0px"/>
 	Cat-Dots(Alpha)
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/dev/assets/misc/transparent.png" height="30" width="0px"/>
 </h3>
@@ -18,13 +16,24 @@
 	<a href="https://github.com/deathemonic/cat-dots/issues">
 		<img alt="Issues" src="https://img.shields.io/github/issues/deathemonic/cat-dots?style=for-the-badge&logo=gitbook&color=B5E8E0&logoColor=D9E0EE&labelColor=302D41"></a>
 </p>
+<h3 align="center">
+	<img src="https://raw.githubusercontent.com/Deathemonic/Cat-Dots/main/Screenshots/catdots.png" width="450"/><br/>
+</h3>
 
 ## Installation
 Go to the [wiki](https://github.com/deathemonic/cat-dots/wiki) for a guide on how to install it and to how to setup it
 
 <details>
-	<summary><strong>Screenshots</strong></summary>
-	> Desktop
+<summary><b>Screenshots</b></summary>
+
+**`Desktop`**
+![Desktop1](https://raw.githubusercontent.com/Deathemonic/Cat-Dots/main/Screenshots/Desktop/Desktop%201.png)
+
+**`Rofi`**
+| Rofi | Screenshot |
+| ---- | ---------- |
+| Bluetooth | <img scr="https://raw.githubusercontent.com/Deathemonic/Cat-Dots/main/Screenshots/Rofi/Rofi-Bluetooth.png" width"300"\> |
+| Launcher  | <img src="https://raw.githubusercontent.com/Deathemonic/Cat-Dots/main/Screenshots/Rofi/Rofi-Launcher.png" width="300"/>
 </details>
 
 ## Thanks to
