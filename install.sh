@@ -1,6 +1,6 @@
-#!/bin/sh
+#!/bin/bash
 
-# Installer Version: 1.9
+# Installer Version: 1.9.2
 # A fork of https://github.com/manas140/dotfiles install.sh
 
 # Use the comments to navigate
@@ -21,15 +21,16 @@ printf "${cb} \____/_/   \_\_|     |____/ \___/ |_| |____/\n"
 printf "${cr}     The Dotfiles with catppuccin colors\n"
 
 # Spaces
-echo " "
-echo " "
+echo
+echo
 
 # Alpha
 printf "${cb}[*] Alpha Test (Note: This is just a alpha test to see if the installer doesn't error out)\n"
 
 # Warning
-printf "${cg}[*] PROCEDING WILL MAKE A BACKUP FOR ALL YOUR CONFIGS IN ($HOME/.config/backups)\n" && sleep 1 # The Sleep makes the installation not spam in the terminal
-printf "${cg}[*] Warning: Installer will replace the old backups with the current one is installed if the installer runs the second times. Please rename the backups folder or just move it to another location\n" && sleep 4
+printf "${cg}[*] PROCEDING WILL MAKE A BACKUP FOR ALL YOUR CONFIGS IN ($HOME/.config/backups)\n" && sleep 1
+printf "${cg}[*] Warning: Installer will replace the old backups with the current one is installed if the installer runs the second times.\n"  && sleep 1
+printf "${cg}[*] Please rename the backups folder or just move it to another location\n" && sleep 2
 printf "${cr}"
 read -p "[-] DO YOU WANT TO PROCEED [Y/N] : " install
 
@@ -78,7 +79,7 @@ case $arch in
             git clone https://aur.archlinux.org/paru.git
             cd paru
             makepkg -si
-            paru -S --noconfirm bspwm-git sxhkd-git polybar-git rofi zsh kitty picom-ibhagwan-git dunst gtk3 gtk-engine-murrine gnome-themes-extra pulseaudio pulseaudio-alsa pulseaudio-bluetooth alsa alsa-utils feh volumectl brightnessctl i3lock-color ksuperkey sddm rofi-bluetooth-git yad networkmanager-dmenu-git cava nerd-fonts-jetbrains-mono ttf-jetbrains-mono ttf-iosevka ttf-iosevka-nerd
+            paru -S --needed bspwm sxhkd polybar rofi zsh kitty picom-ibhagwan-git dunst gtk3 gtk-engine-murrine gnome-themes-extra pulseaudio pulseaudio-alsa pulseaudio-bluetooth alsa alsa-utils feh volumectl brightnessctl i3lock-color ksuperkey sddm rofi-bluetooth-git yad networkmanager-dmenu-git cava nerd-fonts-jetbrains-mono ttf-jetbrains-mono ttf-iosevka ttf-iosevka-nerd
         esac
     # Yay
         case $helper in
@@ -87,7 +88,7 @@ case $arch in
             git clone https://aur.archlinux.org/yay.git
             cd yay
             makepkg -si
-            yay -S --noconfirm bspwm-git sxhkd-git polybar-git rofi zsh kitty picom-ibhagwan-git dunst gtk3 gtk-engine-murrine gnome-themes-extra pulseaudio pulseaudio-alsa pulseaudio-bluetooth alsa alsa-utils feh volumectl brightnessctl i3lock-color ksuperkey sddm rofi-bluetooth-git yad networkmanager-dmenu-git cava nerd-fonts-jetbrains-mono ttf-jetbrains-mono ttf-iosevka ttf-iosevka-nerd
+            yay -S --needed bspwm sxhkd polybar rofi zsh kitty picom-ibhagwan-git dunst gtk3 gtk-engine-murrine gnome-themes-extra pulseaudio pulseaudio-alsa pulseaudio-bluetooth alsa alsa-utils feh volumectl brightnessctl i3lock-color ksuperkey sddm rofi-bluetooth-git yad networkmanager-dmenu-git cava nerd-fonts-jetbrains-mono ttf-jetbrains-mono ttf-iosevka ttf-iosevka-nerd
 esac
 # Installing Oh my zsh
     printf "${cb}[*] Installing OMZ\n" && sleep 2
