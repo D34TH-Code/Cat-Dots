@@ -1,0 +1,62 @@
+configuration {
+  location:                       4;
+  show-icons:                     false;
+  click-to-exit: 					        true;
+}
+
+@import "fonts"
+@import "colors"
+
+window {
+  transparency:                   "real";
+  background-color:               @base;
+  text-color:                     @text;
+  border:                         2px solid;
+  border-color:                   @mantle;
+  border-radius:                  12px;
+  width:                          100px;
+  x-offset:                       -10;
+}
+
+mainbox {
+  background-color:               @base;
+  spacing:                       	10px;
+  padding:                        20px;
+  children:                       [ listview ];
+}
+
+listview {
+  background-color:               @mantle;
+  border-radius:                  100%;
+  columns:                        1;
+  cycle:                          true;
+  dynamic:                        true;
+  fixed-height:                   true;
+  fixed-columns:                  true;
+  layout:                         vertical;
+}
+
+element {
+  background-color:               transparent;
+  text-color:                     @text;
+  orientation:                    horizontal;
+  border-radius:                  100%;
+  padding:                        14px;
+  cursor:                         pointer;
+}
+
+
+element-text {
+  background-color: 				      inherit;
+  text-color:       				      inherit;
+	font:							              "Phosphor 16";
+  horizontal-align:               0.5;
+  vertical-align:                 0.5;
+  margin:                         0px;
+  cursor:                         inherit;
+}
+
+element selected.normal {
+  background-color:               @accent;
+  text-color:                     @mantle;
+}

@@ -1,0 +1,162 @@
+configuration {
+  show-icons:                     false;
+}
+
+@import "colors.rasi"
+@import "fonts.rasi"
+
+window {
+  enabled:                        true;
+  transparency:                   "real";
+  location:                       center;
+  anchor:                         center;
+  fullscreen:                     false;
+  width:                          530px;
+  border:                         2px solid;
+  border-color:                   @mantle;
+  border-radius:                  8px;
+  cursor:                         default;
+  background-color:               @base;
+}
+
+mainbox {
+  enabled:                        true;
+  spacing:                        0px;
+  padding:                        25px;
+  orientation:                    vertical;
+  background-color:               transparent;
+  children:                       [ "inputbar", "message", "listbox" ];
+}
+
+inputbar {
+  enabled:                        true;
+  spacing:                        10px;
+  padding:                        20px;
+  text-color:                     @text;
+  orientation:                    horizontal;
+  border-radius:                  12px;
+  background-color:               transparent;
+  children:                       [ "textbox-prompt-colon", "entry" ];
+}
+
+textbox-prompt-colon {
+  enabled:                        true;
+  expand:                         false;
+  width:                          50px;
+  padding:                        12px;
+  border-radius:                  100%;
+  text-color:                     @mantle;
+  background-color:               @accent;
+  horizontal-align:               0.5;
+  vertical-align:                 0.5;
+  str:                            "";
+  font:                           "Phosphor\-bold 12";
+}
+
+entry {
+  enabled:                        true;
+  expand:                         true;
+  padding:                        12px 16px;
+  border-radius:                  80%;
+  background-color:               @mantle;
+  text-color:                     inherit;
+  cursor:                         text;
+  placeholder:                    "...";
+  placeholder-color:              inherit;
+  vertical-align:                 0.5;
+}
+
+listbox {
+  spacing:                        20px;
+  padding:                        20px 5px;
+  orientation:                    vertical;
+  background-color:               transparent;
+  children:                       [ "listview" ];
+}
+
+listview {
+  enabled:                        true;
+  layout:                         vertical;
+  columns:                        1;
+  lines:                          5;
+  cycle:                          true;
+  dynamic:                        true;
+  scrollbar:                      false;
+  reverse:                        false;
+  fixed-height:                   true;
+  fixed-columns:                  true;   
+  spacing:                        15px;
+  background-color:               transparent;
+  text-color:                     @text;
+}
+
+element {
+  enabled:                        true;
+  spacing:                        10px;
+  padding:                        10px;
+  border-radius:                  8px;
+  background-color:               transparent;
+  text-color:                     @text;
+  cursor:                         pointer;
+}
+
+element normal.normal {
+  background-color:               inherit;
+  text-color:                     inherit;
+}
+
+element normal.urgent {
+  background-color:               @red;
+  text-color:                     @mantle;
+}
+
+element normal.active {
+  background-color:               @accent;
+  text-color:                     @mantle;
+}
+
+element selected.normal {
+  background-color:               @accent;
+  text-color:                     @mantle;
+}
+
+element selected.urgent {
+  background-color:               @red;
+  text-color:                     @mantle;
+}
+
+element selected.active {
+  background-color:               @green;
+  text-color:                     @mantle;
+}
+
+element-text {
+  background-color:               transparent;
+  text-color:                     inherit;
+  cursor:                         inherit;
+  vertical-align:                 0.5;
+}
+
+message {
+  enabled:                        true;
+  margin:                         5px;
+  padding:                        2px;
+  border-radius:                  8px;
+  background-color:               @mantle;
+  text-color:                     @text;
+}
+
+textbox {
+  padding:                        12px;
+  border-radius:                  8px;
+  background-color:               @mantle;
+  text-color:                     @text;
+  vertical-align:                 0.5;
+}
+
+error-message {
+  padding:                        12px;
+  border-radius:                  20px;
+  background-color:               @red;
+  text-color:                     @mantle;
+}

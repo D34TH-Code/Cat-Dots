@@ -1,0 +1,34 @@
+{ pkgs, ... }: with pkgs; [
+  brightnessctl
+  btop
+  coreutils
+  curl
+  feh
+  glib
+  gnused
+  gpick
+  i3lock-color
+  imagemagick
+  jq
+  killall
+  lm_sensors
+  maim
+  neofetch
+  p7zip
+  pamixer
+  picom-jonaburg
+  playerctl
+  stalonetray
+  tree
+  unrar
+  unzip
+  util-linux
+  wget
+  xclip
+  xdo
+  xfce.xfce4-power-manager
+  xsettingsd
+  yad
+  zip
+  zscroll
+]
