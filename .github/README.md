@@ -1,1 +1,6 @@
-WIP Home-Manager Configuration for Nix
+WIP
+
+Requirements:
+Home-Manager
+Flakes
+Nix / NixOS
